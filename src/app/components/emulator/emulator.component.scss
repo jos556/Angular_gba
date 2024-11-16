@@ -1,0 +1,81 @@
+.emulator-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--surface-color);
+  border-radius: var(--border-radius);
+  margin: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  .gba-screen {
+    width: 480px;  // 2x original size
+    height: 320px; // 2x original size
+    background: #000;
+    image-rendering: pixelated;
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  .controls {
+    margin-top: 20px;
+    display: flex;
+    gap: 16px;
+    padding: 16px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: var(--border-radius);
+    width: 100%;
+    max-width: 480px;
+    box-sizing: border-box;
+    justify-content: center;
+  }
+
+  .key-config {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: var(--border-radius);
+    width: 100%;
+    max-width: 480px;
+    box-sizing: border-box;
+
+    h3 {
+      margin-top: 0;
+      margin-bottom: 20px;
+      color: var(--text-color);
+      text-align: center;
+      font-weight: 500;
+    }
+
+    .key-mapping {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+      padding: 8px;
+      background-color: rgba(255, 255, 255, 0.05);
+      border-radius: var(--border-radius);
+
+      span {
+        margin-right: 16px;
+        min-width: 80px;
+        font-weight: 500;
+      }
+
+      input {
+        width: 120px;
+        padding: 8px 12px;
+        border: none;
+        background-color: rgba(255, 255, 255, 0.1);
+        color: var(--text-color);
+        border-radius: 4px;
+        font-size: 14px;
+
+        &:focus {
+          outline: none;
+          background-color: rgba(255, 255, 255, 0.15);
+        }
+      }
+    }
+  }
+} 

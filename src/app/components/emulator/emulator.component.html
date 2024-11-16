@@ -1,0 +1,32 @@
+<div class="emulator-container">
+  <canvas #gbaCanvas class="gba-screen"></canvas>
+  
+  <div class="controls">
+    <label class="file-input-label">
+      Load ROM
+      <input type="file" 
+             accept=".gba"
+             (change)="onROMUpload($event)">
+    </label>
+    
+    <button (click)="onPause()">
+      <i class="fas fa-pause"></i> Pause
+    </button>
+
+    <button (click)="toggleKeyConfig()">
+      <i class="fas fa-keyboard"></i> Configure Keys
+    </button>
+  </div>
+
+  <div class="key-config" *ngIf="showKeyConfig">
+    <h3>Key Configuration</h3>
+    <div class="key-mapping" *ngFor="let key of keyConfig | keyvalue">
+      <span>{{ getKeyName(key.value) }}</span>
+      <input type="text" 
+             [value]="key.key"
+             (keydown)="$event.preventDefault()"
+             (keyup)="keyConfig[$event.key] = key.value; updateKeyConfig()"
+             placeholder="Press any key...">
+    </div>
+  </div>
+</div> 
