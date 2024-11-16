@@ -11,7 +11,7 @@
   <img src="https://img.shields.io/badge/Web%20Audio%20API-FF3E00?style=for-the-badge" alt="Web Audio API">
 </p>
 
-使用 Angular 和 TypeScript 構建的 Game Boy Advance 模擬器。支持大多數 GBA 遊戲，並提供現代化的網頁界面。
+使用 Angular 和 TypeScript 構建的 Game Boy Advance 模擬器。
 
 ## ✨ 特點
 
@@ -23,7 +23,6 @@
 - 🖼️ **圖形渲染**
 
   - WebGL 加速渲染
-  - 支持所有 GBA 顯示模式
   - 精靈和背景圖層
   - 硬件加速縮放和旋轉
 - 🔊 **音頻模擬**
