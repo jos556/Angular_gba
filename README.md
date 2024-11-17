@@ -1,7 +1,7 @@
 # 🎮 Angular GBA Emulator
 
 <p align="center">
-  <img src="angular_gba.png" alt="GBA Emulator Preview" width="600">
+  <img src="angular_gba.png" alt="Emulator Preview" width="600">
 </p>
 
 <p align="center">
@@ -11,7 +11,7 @@
   <img src="https://img.shields.io/badge/Web%20Audio%20API-FF3E00?style=for-the-badge" alt="Web Audio API">
 </p>
 
-使用 Angular 和 TypeScript 構建的 Game Boy Advance 模擬器。
+使用 Angular 和 TypeScript 構建的模擬器。
 
 ## ✨ 特點
 
